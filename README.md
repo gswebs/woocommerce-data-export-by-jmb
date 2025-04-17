@@ -2,9 +2,9 @@
 
 Contributors: Gurjit Singh  
 Tags: woocommerce, email export, order exporter, csv export  
-Requires at least: 5.6  
-Tested up to: 6.5  
-Requires PHP: 7.4  
+Requires at least: 5.6 
+Tested up to: 6.8  
+Requires PHP: 8.2  
 License: GPLv2 or later  
 License URI: https://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -16,7 +16,7 @@ Export WooCommerce orders data details to CSV with filtering options. Supports f
 
 **Key Features:**
 - Export WooCommerce orders data
-- Optional fields: Name, Phone, Order Status, Order Date
+- Optional fields: Order Id, Name, Phone, Products, Order Status, Order Date, Order Total, 
 - Filter by:
   - Order status (e.g. completed, processing)
   - Date range
