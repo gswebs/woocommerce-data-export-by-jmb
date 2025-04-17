@@ -49,7 +49,7 @@ Yes, guest customer emails and data are included as long as the order has a bill
 
 ### Changelog
 
-= 0.1.0 =
+**0.1.0**  
 *Initial release with filtering by order date, status, product.*
 *Selectable fields: Email, Name, Phone, Status, Order Date.*
 
