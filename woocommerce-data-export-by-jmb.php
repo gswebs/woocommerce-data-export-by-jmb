@@ -23,23 +23,6 @@ final class Woo_JMB_Export_Plugin {
         add_action('admin_menu', [$this, 'add_admin_menu']);
         add_action('admin_post_export_orders_data', [$this, 'handle_export']);
     }
-
-    /*public function jmb_export_enqueue($hook_suffix) {
-        if($hook_suffix == "woocommerce_page_export-orders-data") {
-            // Enqueue WooCommerce Select2 if not already loaded
-            
-            wp_enqueue_script('select2');
-            wp_enqueue_style('select2');
-        
-            // Enqueue custom script to initialize Select2 for WooCommerce products
-            wp_enqueue_script('jmb-export-select2-init', plugin_dir_url(__FILE__) . 'js/select2-init.js', array('jquery', 'select2'), 9.0, true);
-        
-            // Localize script for AJAX request
-            wp_localize_script('jmb-export-select2-init', 'jmb_ajax_object', array(
-                'ajax_url' => admin_url('admin-ajax.php')
-            ));
-        }
-    }*/
     
     public function fields(){
         $ar = array(
@@ -112,32 +95,6 @@ final class Woo_JMB_Export_Plugin {
                                     <?php esc_html_e($label, 'jmb-woo-order-data-export'); ?>
                                 </label>
                             <?php endforeach; ?>
-                            
-                            <?php /* ?><label>
-                                <input type="checkbox" name="export_fields[]" value="email" checked>
-                                <?php esc_html_e('Email', 'jmb-woo-order-data-export'); ?>
-                            </label><br>
-                
-                            <label>
-                                <input type="checkbox" name="export_fields[]" value="name">
-                                <?php esc_html_e('Name', 'jmb-woo-order-data-export'); ?>
-                            </label><br>
-                
-                            <label>
-                                <input type="checkbox" name="export_fields[]" value="phone">
-                                <?php esc_html_e('Phone', 'jmb-woo-order-data-export'); ?>
-                            </label><br>
-                
-                            <label>
-                                <input type="checkbox" name="export_fields[]" value="status">
-                                <?php esc_html_e('Order Status', 'jmb-woo-order-data-export'); ?>
-                            </label><br>
-                
-                            <label>
-                                <input type="checkbox" name="export_fields[]" value="order_date">
-                                <?php esc_html_e('Order Date', 'jmb-woo-order-data-export'); ?>
-                            </label>
-                            <?php */ ?>
                             
                             <?php do_action('jmb_export_fields'); ?>
                             
