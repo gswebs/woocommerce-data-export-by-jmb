@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WooCommerce Orders Data Exporter By JMB
- * Plugin URI:
+ * Plugin URI: https://github.com/gswebs/woocommerce-data-export-by-jmb
  * Description: Export data from WooCommerce orders as CSV.
  * Author: Gurjit Singh
  * Version: 0.1.0
