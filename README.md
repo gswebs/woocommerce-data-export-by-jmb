@@ -38,13 +38,13 @@ It also supports exporting additional fields like billing name, phone, order sta
 
 ### Frequently Asked Questions
 
-**Can I filter orders by product?**
+1 **Can I filter orders by product?**  
 Yes, there is a product ID filter field in the export form.
 
-**Can I choose which fields to export?**
+2 **Can I choose which fields to export?**  
 Yes, checkboxes allow you to include/exclude fields like name and phone.
 
-**Does this export guest orders too?**
+3 **Does this export guest orders too?**  
 Yes, guest customer emails and data are included as long as the order has a billing email.
 
 ### Changelog
