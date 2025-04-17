@@ -5,7 +5,6 @@ Tags: woocommerce, email export, order exporter, csv export
 Requires at least: 5.6  
 Tested up to: 6.5  
 Requires PHP: 7.4  
-Stable tag: 1.0.0  
 License: GPLv2 or later  
 License URI: https://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -60,3 +59,7 @@ Initial release.
 ### License
 
 This plugin is licensed under the GPLv2 or later.
+
+### Contact
+If you are facing with any issues in this plugin, send a message to the following email address.
+gswebsitedeveloper@gmail.com
