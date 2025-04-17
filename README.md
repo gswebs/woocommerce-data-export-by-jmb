@@ -60,3 +60,7 @@ Initial release.
 ### License
 
 This plugin is licensed under the GPLv2 or later.
+
+### Contact
+If you are facing with any issues in this plugin, send a message to the following email address.
+gswebsitedeveloper@gmail.com
