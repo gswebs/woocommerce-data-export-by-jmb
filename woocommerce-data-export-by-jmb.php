@@ -16,11 +16,16 @@ require_once plugin_dir_path(__FILE__) . 'includes/OrderDataExporter.php';
 
 use WooJMBExporter\OrderDataExporter;
 
+define( 'JMB_EXPORTER_PLUGIN_FILE_PATH', __FILE__ );
+
+define( 'JMB_EXPORTERS_PLUGIN_BASENAME', plugin_basename( JMB_EXPORTER_PLUGIN_FILE_PATH ) );
+
 final class Woo_JMB_Export_Plugin {
 
     public function __construct() {
         //add_action('admin_enqueue_scripts', [$this, 'jmb_export_enqueue']);
         add_action('admin_menu', [$this, 'add_admin_menu']);
+        add_filter( 'plugin_action_links_' . JMB_EXPORTERS_PLUGIN_BASENAME, [$this, 'add_action_links'] );
         add_action('admin_post_export_orders_data', [$this, 'handle_export']);
     }
     
@@ -47,6 +52,13 @@ final class Woo_JMB_Export_Plugin {
             'export-orders-data',
             [$this, 'render_admin_page']
         );
+    }
+
+    public function add_action_links ( $links ) {
+        $mylinks = array(
+            '<a href="' . admin_url( 'admin.php?page=export-orders-data' ) . '" target="_blank">Export</a>',
+        );
+        return array_merge( $links, $mylinks );
     }
 
     public function render_admin_page() {
