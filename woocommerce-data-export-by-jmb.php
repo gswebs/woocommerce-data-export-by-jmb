@@ -113,32 +113,6 @@ final class Woo_JMB_Export_Plugin {
                                 </label>
                             <?php endforeach; ?>
                             
-                            <?php /* ?><label>
-                                <input type="checkbox" name="export_fields[]" value="email" checked>
-                                <?php esc_html_e('Email', 'jmb-woo-order-data-export'); ?>
-                            </label><br>
-                
-                            <label>
-                                <input type="checkbox" name="export_fields[]" value="name">
-                                <?php esc_html_e('Name', 'jmb-woo-order-data-export'); ?>
-                            </label><br>
-                
-                            <label>
-                                <input type="checkbox" name="export_fields[]" value="phone">
-                                <?php esc_html_e('Phone', 'jmb-woo-order-data-export'); ?>
-                            </label><br>
-                
-                            <label>
-                                <input type="checkbox" name="export_fields[]" value="status">
-                                <?php esc_html_e('Order Status', 'jmb-woo-order-data-export'); ?>
-                            </label><br>
-                
-                            <label>
-                                <input type="checkbox" name="export_fields[]" value="order_date">
-                                <?php esc_html_e('Order Date', 'jmb-woo-order-data-export'); ?>
-                            </label>
-                            <?php */ ?>
-                            
                             <?php do_action('jmb_export_fields'); ?>
                             
                         </td>

@@ -25,12 +25,10 @@ class OrderDataExporter extends BaseExporter {
         }
     
         // Add date range filters if provided
-        if (!empty($this->filters['date_from'])) {
-            $args['date_created']['after'] = $this->filters['date_from'] . ' 00:00:00';
-        }
-    
-        if (!empty($this->filters['date_to'])) {
-            $args['date_created']['before'] = $this->filters['date_to'] . ' 23:59:59';
+        if (!empty($this->filters['date_from']) && !empty($this->filters['date_to'])) {
+            $date_from = $this->filters['date_from'];
+            $date_to = $this->filters['date_to'];
+            $args['date_created'] = $date_from.'...'.$date_to;
         }
         
         $args_ar = apply_filters('jmb_fetch_data_args', $args);

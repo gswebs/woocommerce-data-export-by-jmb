@@ -13,8 +13,7 @@ Export WooCommerce orders data details to CSV with filtering options. Supports f
 
 ### Description
 
-**WooCommerce Orders Data Exporter By JMB** is a simple plugin to export WooCommerce orders data, like billing name, phone, order status, and order date.  
-It also supports exporting additional fields like billing name, phone, order status, and order date.
+**WooCommerce Orders Data Exporter By JMB** is a simple plugin to export WooCommerce orders data, like billing name, phone, order status, and order date.
 
 **Key Features:**
 - Export WooCommerce orders data
